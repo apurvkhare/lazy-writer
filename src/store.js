@@ -1,11 +1,11 @@
 import { createStore} from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
-import rootReducer from "./reducers/lazyReducer";
+import {lazyReducer} from "./reducers/lazyReducer";
 
 const initialState = {};
 
 const store = createStore(
-  rootReducer,
+  lazyReducer,
   initialState,
   composeWithDevTools()
 );

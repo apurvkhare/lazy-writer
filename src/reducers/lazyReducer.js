@@ -7,7 +7,7 @@ const initialState = {
     wordsPerMinute: 0
 }
 
-export default (state = initialState, action) => {
+export const lazyReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_PARA:
             return{
